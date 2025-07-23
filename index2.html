@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Merciel Mithimbo - Ingénieur Réseau & IoT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Open Sans', sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+    .progress { height: 8px; background: #e5e7eb; border-radius: 4px; overflow: hidden; }
+    .progress-bar { height: 100%; background: #3E92CC; transition: width 1.5s ease; }
+    .section { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+    .section.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-white shadow-lg z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-900">Merciel Mithimbo</h1>
+      <div class="hidden md:flex space-x-8">
+        <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium">À propos</a>
+        <a href="#skills" class="text-gray-700 hover:text-blue-600 font-medium">Compétences</a>
+        <a href="#portfolio" class="text-gray-700 hover:text-blue-600 font-medium">Portfolio</a>
+        <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+      </div>
+      <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-full font-medium">Me contacter</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="pt-32 pb-20 bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white text-center">
+    <div class="container mx-auto px-6">
+      <img src="https://placehold.co/200x200/3E92CC/FFFFFF?text=MM" alt="Merciel Mithimbo" class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-white shadow-lg"/>
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Dieme MUMBERE MITHIMBO</h2>
+      <p class="text-xl md:text-2xl mb-6 text-blue-100">Ingénieur Réseau & Spécialiste IoT</p>
+      <p class="max-w-2xl mx-auto text-blue-100 mb-8 text-lg">
+        Diplômé en Mathématique Informatique à l’UNIKIN, formé à Cisco Networking Academy. Passionné par la transformation numérique en Afrique.
+      </p>
+      <div class="space-x-4">
+        <a href="#portfolio" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-medium inline-block">Voir mon portfolio</a>
+        <a href="https://wa.me/243972488069" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-medium inline-block">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- À propos -->
+  <section id="about" class="py-20 bg-white section">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">À propos de moi</h2>
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2">
+          <p class="text-lg mb-4">
+            Ingénieur réseau diplômé en <strong>Mathématique Informatique</strong> à l’Université de Kinshasa (UNIKIN), j’ai su allier ma passion pour les mathématiques et la technologie pour devenir un expert en réseaux et systèmes embarqués.
+          </p>
+          <p class="text-lg mb-4">
+            Formé à <strong>Cisco Networking Academy</strong>, j’ai acquis des compétences solides en configuration de réseaux LAN/WAN, sécurité, et automatisation. Mon stage à <strong>SOFIDE SA</strong> m’a permis de renforcer mes compétences en support IT, analyse de données et scripts d’automatisation.
+          </p>
+          <p class="text-lg">
+            Je crois en la transformation numérique de l’Afrique et je souhaite contribuer à cette révolution technologique.
+          </p>
+          <div class="mt-8">
+            <a href="CV_Dieme_MUMBERE_MITHIMBO.pdf" download class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition">
+              📄 Télécharger mon CV
+            </a>
+          </div>
+        </div>
+        <div class="md:w-1/2">
+          <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-4">Détails personnels</h3>
+            <ul class="space-y-2">
+              <li><strong>📧 Email :</strong> mercielmithimbo@gmail.com</li>
+              <li><strong>📞 Téléphone :</strong> +243 972 488 069</li>
+              <li><strong>📍 Adresse :</strong> Kinshasa, Mont Ngafula</li>
+              <li><strong>🌐 Langues :</strong> Français, Anglais, Swahili, Lingala</li>
+              <li><strong>🎓 Diplôme :</strong> Licence en Mathématique Informatique (UNIKIN)</li>
+              <li><strong>📅 Naissance :</strong> 3 mai 1999, à Butembo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compétences -->
+  <section id="skills" class="py-20 bg-gray-50 section">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Mes Compétences</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Réseaux & Sécurité</h3>
+          <ul class="space-y-4">
+            <li>
+              <span>TCP/IP, OSI, Routage, Switching</span>
+              <div class="progress mt-1"><div class="progress-bar" style="width: 80%"></div></div>
+            </li>
+            <li>
+              <span>Cisco Packet Tracer</span>
+              <div class="progress mt-1"><div class="progress-bar" style="width: 85%"></div></div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Programmation & IoT</h3>
+          <ul class="space-y-4">
+            <li>
+              <span>Python (scripts, données)</span>
+              <div class="progress mt-1"><div class="progress-bar" style="width: 75%"></div></div>
+            </li>
+            <li>
+              <span>Arduino / Raspberry Pi</span>
+              <div class="progress mt-1"><div class="progress-bar" style="width: 85%"></div></div>
+            </li>
+            <li>
+              <span>HTML/CSS/JS</span>
+              <div class="progress mt-1"><div class="progress-bar" style="width: 70%"></div></div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Outils & Plateformes</h3>
+          <ul class="space-y-4">
+            <li>
+              <span>Microsoft Office (Excel avancé)</span>
+              <div class="progress mt-1"><div class="progress-bar" style="width: 80%"></div></div>
+            </li>
+            <li>
+              <span>Git / GitHub</span>
+              <div class="progress mt-1"><div class="progress-bar" style="width: 70%"></div></div>
+            </li>
+            <li>
+              <span>Linux (basique)</span>
+              <div class="progress mt-1"><div class="progress-bar" style="width: 65%"></div></div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Soft Skills</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li>• Analyse critique</li>
+            <li>• Résolution de problèmes</li>
+            <li>• Communication claire</li>
+            <li>• Travail d'équipe</li>
+            <li>• Adaptabilité</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="py-20 bg-white section">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Mon Portfolio</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="border rounded-lg overflow-hidden shadow-lg">
+          <div class="h-40 bg-blue-500 flex items-center justify-center text-white text-2xl font-bold">Projet Réseau</div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold">Simulation LAN/WAN Cisco</h3>
+            <p class="text-gray-600 my-2">Configuration de VLANs, routage inter-VLAN et sécurité de base avec Cisco Packet Tracer.</p>
+            <span class="text-sm text-blue-600">Cisco, TCP/IP, Packet Tracer</span>
+          </div>
+        </div>
+        <div class="border rounded-lg overflow-hidden shadow-lg">
+          <div class="h-40 bg-purple-500 flex items-center justify-center text-white text-2xl font-bold">IoT</div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold">Système de surveillance intelligent</h3>
+            <p class="text-gray-600 my-2">Prototype avec Raspberry Pi, capteurs de mouvement et notification en temps réel.</p>
+            <span class="text-sm text-blue-600">Python, MQTT, Raspberry Pi</span>
+          </div>
+        </div>
+        <div class="border rounded-lg overflow-hidden shadow-lg">
+          <div class="h-40 bg-green-500 flex items-center justify-center text-white text-2xl font-bold">Automatisation</div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold">Scripts d’automatisation Excel</h3>
+            <p class="text-gray-600 my-2">Génération automatique de rapports financiers chez SOFIDE SA avec Python.</p>
+            <span class="text-sm text-blue-600">Python, Pandas, Excel</span>
+          </div>
+        </div>
+        <div class="border rounded-lg overflow-hidden shadow-lg">
+          <div class="h-40 bg-orange-500 flex items-center justify-center text-white text-2xl font-bold">Web</div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold">Portfolio interactif</h3>
+            <p class="text-gray-600 my-2">Site web dynamique pour présenter mes compétences et projets.</p>
+            <span class="text-sm text-blue-600">HTML, CSS, JS, React</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-gray-900 text-white section">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Me contacter</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <form action="https://formspree.io/f/xyyazqvo" method="POST" class="space-y-6">
+          <div>
+            <label class="block mb-2 font-medium">Nom</label>
+            <input type="text" name="name" required class="w-full p-3 rounded bg-gray-800 text-white border border-gray-700 focus:border-blue-500 outline-none"/>
+          </div>
+          <div>
+            <label class="block mb-2 font-medium">Email</label>
+            <input type="email" name="email" required class="w-full p-3 rounded bg-gray-800 text-white border border-gray-700 focus:border-blue-500 outline-none"/>
+          </div>
+          <div>
+            <label class="block mb-2 font-medium">Message</label>
+            <textarea name="message" rows="5" required class="w-full p-3 rounded bg-gray-800 text-white border border-gray-700 focus:border-blue-500 outline-none"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded font-medium transition">Envoyer le message</button>
+        </form>
+
+        <div>
+          <h3 class="text-2xl font-semibold mb-6">Coordonnées</h3>
+          <ul class="space-y-4 text-lg">
+            <li>📧 <strong>Email :</strong> <a href="mailto:mercielmithimbo@gmail.com" class="text-blue-400 hover:underline">mercielmithimbo@gmail.com</a></li>
+            <li>📱 <strong>WhatsApp :</strong> <a href="https://wa.me/243972488069" target="_blank" class="text-green-400 hover:underline">+243 972 488 069</a></li>
+            <li>📍 <strong>Adresse :</strong> Kinshasa, Mont Ngafula</li>
+          </ul>
+
+          <h3 class="text-2xl font-semibold mt-8 mb-4">Réseaux sociaux</h3>
+          <div class="flex space-x-4">
+            <a href="https://facebook.com/MercielMithimbo" target="_blank" class="bg-blue-600 p-3 rounded-full">📘</a>
+            <a href="https://linkedin.com/in/MercielMithimbo" target="_blank" class="bg-blue-700 p-3 rounded-full">💼</a>
+            <a href="https://instagram.com/MercielMithimbo" target="_blank" class="bg-pink-600 p-3 rounded-full">📸</a>
+            <a href="https://twitter.com/MercielMithimbo" target="_blank" class="bg-gray-800 p-3 rounded-full">🐦</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-gray-400 py-8 text-center">
+    <div class="container mx-auto px-6">
+      <p>© 2025 Merciel Mithimbo. Tous droits réservés.</p>
+      <p class="mt-2">Ingénieur Réseau & Spécialiste IoT | Formé à Cisco Networking Academy</p>
+    </div>
+  </footer>
+
+  <!-- Animation au scroll -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sections = document.querySelectorAll(".section");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, { threshold: 0.1 });
+
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+
+      // Animation des barres de compétence
+      const progressBars = document.querySelectorAll(".progress-bar");
+      const progressObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const width = entry.target.style.width;
+            entry.target.style.width = "0%";
+            setTimeout(() => {
+              entry.target.style.width = width;
+            }, 100);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      progressBars.forEach(bar => {
+        progressObserver.observe(bar);
+      });
+    });
+  </script>
+</body>
+</html>
